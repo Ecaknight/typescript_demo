@@ -14,7 +14,7 @@ function render(result: Result) {
 let result = {
     data: [
         {id: 1, name: 'xx', age: 12},
-        {id: 2, name: 'yy'}
+        {id: 2, name: 'yy', }
     ]
 }
 render(result);
