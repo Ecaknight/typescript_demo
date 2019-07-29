@@ -52,3 +52,4 @@ class 子类名 extends 父类名 { ... }
 
 接口: `interface`
 
+泛型
