@@ -10,12 +10,32 @@
 静态类型语言: 在编译阶段确认所有变量的类型
 动态类型语言: 在执行阶段确认所有变量的类型
 
-
+**简单语法**: 标识符: 数据类型
 ### 数据类型
 > 除了JavaScript中所有的类型外, TypeScript还新增了许多额外的类型, 以满足开发的需求
 
 **Number**
+数值类型是简单类型之一
+```js
+//true
+let count: number = 3;
+
+//false
+let num: number = '2'; //不能将类型'2'分配给number类型
+```
+这里定义了一个number类型的变量, 一旦被确定为number, 变量就无法被赋值除number类型以外的类型了.
+
 **String**
+字符串类型定义了一个变量只能为字符串
+```js
+//true
+let str: string = 'myname';
+
+//false
+let mystr: string = 3; //不能将类型"3"分配给string类型
+```
+定义一个string类型的变量时, 无法将其他的类型赋值给这个变量, 否则, 将提示报错.
+
 **Boolean**
 **Array**
 **Function**

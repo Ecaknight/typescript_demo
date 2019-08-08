@@ -49,18 +49,19 @@
 // type Add = (x: number, y: number) => number;
 // let adds: Add = (a, b) => a + b;
 //混合类型
-interface Lib {
-    (): void;
-    version: string;
-    doSomething(): void;
-}
-function getLib() {
-    let lib = (() => {}) as Lib
-    lib.version = '1.0.0'
-    lib.doSomething = () => {}
-    return lib;
-}
-let lib1 = getLib();
-lib1();
-let lib2 = getLib();
-lib2.doSomething();
+// interface Lib {
+//     (): void;
+//     version: string;
+//     doSomething(): void;
+// }
+// function getLib() {
+//     let lib = (() => {}) as Lib
+//     lib.version = '1.0.0'
+//     lib.doSomething = () => {}
+//     return lib;
+// }
+// let lib1 = getLib();
+// lib1();
+// let lib2 = getLib();
+// lib2.doSomething();
+// const st1: string = 3;
