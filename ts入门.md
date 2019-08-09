@@ -37,7 +37,25 @@ let mystr: string = 3; //不能将类型"3"分配给string类型
 定义一个string类型的变量时, 无法将其他的类型赋值给这个变量, 否则, 将提示报错.
 
 **Boolean**
+布尔类型: 只能用true或false赋值
+```js
+//true
+let res: boolean = true;
+
+//false
+let res1: boolean = 1; //不能将类型"1"分配给boolean类型
+```
+
 **Array**
+数组类型: 数组内的元素必须是同一种数据类型的
+```js
+//true
+let arr: string[] = ['a', 'b'];
+let arr1: number[] = [1, 2];
+//false
+let arr2: number[] = ['a'];
+```
+
 **Function**
 **Object**
 **Symbol**
